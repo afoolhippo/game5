@@ -19,7 +19,7 @@ const finalScoreText = document.getElementById("finalScore");
 const retryButton = document.getElementById("retryButton");
 
 const CELL_COUNT = 9;
-const GAME_TIME = 36;
+const GAME_TIME = 40;
 
 // 通常
 const SPAWN_NORMAL = 1150;
@@ -27,9 +27,9 @@ const SMALL_TO_MID_NORMAL = 650;
 const MID_TO_LOCK_NORMAL = 1500;
 
 // 成長注意！
-const SPAWN_SABI = 520;
-const SMALL_TO_MID_SABI = 380;
-const MID_TO_LOCK_SABI = 900;
+const SPAWN_SABI = 460;
+const SMALL_TO_MID_SABI = 260;
+const MID_TO_LOCK_SABI = 620;
 
 // BONUS
 const BONUS_RATE = 0.08;
