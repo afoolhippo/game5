@@ -19,7 +19,7 @@ const finalScoreText = document.getElementById("finalScore");
 const retryButton = document.getElementById("retryButton");
 
 const CELL_COUNT = 9;
-const GAME_TIME = 94;
+const GAME_TIME = 36;
 
 // 通常
 const SPAWN_NORMAL = 1150;
@@ -132,17 +132,13 @@ function getElapsedSeconds() {
 }
 
 function isSabiTime() {
+
   const elapsed = getElapsedSeconds();
 
-  const sabi1 =
+  return (
     elapsed >= 18 &&
-    elapsed < 36;
-
-  const sabi2 =
-    elapsed >= 54 &&
-    elapsed < 94;
-
-  return sabi1 || sabi2;
+    elapsed < 36
+  );
 }
 
 function updatePhaseDisplay() {
@@ -351,21 +347,20 @@ function timerLoop() {
 }
 
 function getRank(score) {
-  if (score >= 5000) return "S";
-  if (score >= 3200) return "A";
-  if (score >= 1800) return "B";
+  if (score >= 2800) return "S";
+  if (score >= 2000) return "A";
+  if (score >= 1200) return "B";
 
   return "C";
 }
 
 function getRankTitle(score) {
-  if (score >= 5000) return "タケノコ神";
-  if (score >= 3200) return "タケノコ名人";
-  if (score >= 1800) return "タケノコビギナー";
+  if (score >= 2800) return "タケノコ神";
+  if (score >= 2000) return "タケノコ名人";
+  if (score >= 1200) return "タケノコビギナー";
 
   return "また掘ろう";
 }
-
 function endGame() {
   if (gameOver) return;
 
