@@ -113,6 +113,10 @@ titleStartButton.addEventListener("click", () => {
   startGame();
 });
 
+titleImage.addEventListener("click", () => {
+  startGame();
+});
+
 backTitleButton.addEventListener("click", () => {
   goToTitleScreen();
 });
