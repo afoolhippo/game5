@@ -14,79 +14,69 @@
 </head>
 <body>
 
+  <!-- TITLE -->
+
   <div id="titleScreen" class="screen">
+
     <img
       src="title.png"
       alt="BABY BABY BAMBOO"
       class="title-image"
     >
 
-    <div class="start-text">
-      PRESS START BUTTON
-    </div>
-  </div>
-
-  <div id="ruleScreen" class="screen hidden">
-
-    <h2>HOW TO PLAY</h2>
-
-    <div class="rule-block">
-      <img src="bamboo1.png" alt="小タケノコ">
-      <p>
-        100 POINTS<br>
-        すばやく収穫！
-      </p>
-    </div>
-
-    <div class="rule-block">
-      <img src="bamboo2.png" alt="中タケノコ">
-      <p>
-        20 POINTS<br>
-        早めに収穫！
-      </p>
-    </div>
-
-    <div class="rule-block">
-      <img src="gold_bamboo.png" alt="金タケノコ">
-      <p>
-        BONUS !<br>
-        300 POINTS
-      </p>
-    </div>
-
-    <div class="rule-block">
-      <img src="bamboo3.png" alt="竹林">
-      <p>
-        竹林化すると<br>
-        そのマスは使えない！
-      </p>
-    </div>
-
-    <p class="rule-note">
-      40秒でハイスコアを目指せ！
+    <p class="title-rule">
+      小さいタケノコほど高得点！<br>
+      竹林になる前に掘りまくれ！
     </p>
 
-    <div class="start-text">
-      TAP TO START
-    </div>
+    <button
+      id="titleStartButton"
+      class="main-start-button"
+    >
+      タップしてスタート
+    </button>
 
   </div>
+
+  <!-- GAME -->
 
   <div id="gameScreen" class="screen hidden">
 
+    <button
+      id="backTitleButton"
+      class="back-title-button"
+    >
+      タイトルへ戻る
+    </button>
+
     <div class="top-ui">
-      <div id="score">SCORE 0</div>
-      <div id="timer">40</div>
+
+      <div id="score">
+        SCORE 0
+      </div>
+
+      <div id="timer">
+        40
+      </div>
+
       <div id="phase"></div>
+
     </div>
 
     <div id="grid" class="grid"></div>
 
   </div>
 
+  <!-- RESULT -->
+
   <div id="resultScreen" class="screen hidden">
 
-    <div id="rank" class="rank">A</div>
+    <img
+      id="resultImage"
+      class="result-image"
+      src="result_normal.png"
+      alt="result"
+    >
 
     <div id="rankTitle" class="rank-title">
       タケノコ名人
@@ -96,9 +86,21 @@
       SCORE 0
     </div>
 
-    <button id="retryButton">
-      もういっかい！
-    </button>
+    <div class="result-buttons">
+
+      <button id="shareButton">
+        Xでシェア
+      </button>
+
+      <button id="retryButton">
+        もう1回遊ぶ
+      </button>
+
+      <button id="homeButton">
+        カバゲーセンへ
+      </button>
+
+    </div>
 
   </div>
 
