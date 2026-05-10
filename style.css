@@ -91,7 +91,6 @@ body {
 
   cursor: pointer;
 
-  animation: blink 0.8s steps(2, start) infinite;
 }
 
 @keyframes blink {
@@ -103,29 +102,22 @@ body {
 /* GAME */
 
 #gameScreen {
-  padding-top: 28px;
+  padding-top: 52px;
 }
 
 .back-title-button {
   position: absolute;
-
-  top: 10px;
-  right: 10px;
-
+  top: 8px;
+  right: 8px;
   z-index: 3;
 
-  padding: 6px 10px;
-
+  padding: 5px 8px;
   border: 3px solid #243010;
-
   background: #cfe8a9;
-
   color: #243010;
 
   font-family: 'DotGothic16', sans-serif;
-
-  font-size: 14px;
-
+  font-size: 13px;
   cursor: pointer;
 }
 
