@@ -3,6 +3,7 @@ const gameScreen = document.getElementById("gameScreen");
 const resultScreen = document.getElementById("resultScreen");
 
 const titleStartButton = document.getElementById("titleStartButton");
+const titleImage = document.querySelector(".title-image");
 const backTitleButton = document.getElementById("backTitleButton");
 
 const grid = document.getElementById("grid");
